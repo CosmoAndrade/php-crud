@@ -27,7 +27,7 @@ $consulta = $conexao->query("SELECT * FROM pessoa");  //Exibir dados
     <tr>
       <th>Nome</th>
       <th>Idade</th>
-      <th colspan="2">Ações</th>
+      <th >Ações</th>
     </tr>
 
     <?php while($linha = $consulta->fetch()): ?>
