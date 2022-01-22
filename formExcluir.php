@@ -22,13 +22,13 @@ require './conexao.php';
 
     <h1 class="text-center">DELETE</h1>
 
-    <a href="index.php"> Cancelar exclusão e voltar!</a>
+    <a href="index.php" class="btn btn-primary"> Cancelar exclusão e voltar!</a>
     <hr>
 
   <p>Realmente deseja exluir <strong><?php echo $_GET['nome'] ?></strong> com <?php echo $_GET['idade'] ?> anos de idade?</p><br>
   <form action="excluir.php" method="POST">
     <input type="hidden" name="codigo" value="<?php echo $_GET['codigo'] ?>">
-    <input type="submit" value="Sim, excluir">
+    <input class="btn btn-danger" type="submit" value="Sim, excluir">
   </form>
 
     </div>
